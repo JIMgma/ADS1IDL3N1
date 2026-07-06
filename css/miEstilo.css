@@ -11,7 +11,7 @@
 /*estilos: tipo de letra, color de fondo tamaño de espanción*/
 
 html {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     background: linear-gradient(135deg, #f3f1ef, #c1d3f5);
 }
