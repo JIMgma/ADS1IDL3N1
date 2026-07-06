@@ -1,0 +1,166 @@
+/* colores usados */
+:root {
+    --color-principal: #0a4c98;
+    --color-parrafo: #374151;
+    --color-footer: #e5e6e7;
+    --color-amarillo: #ffc400;
+    --color-gris:#807e7e;
+}
+
+
+/*estilos: tipo de letra, color de fondo tamaño de espanción*/
+
+html {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    background: linear-gradient(135deg, #f3f1ef, #c1d3f5);
+}
+
+body {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px #353535;
+    box-sizing: border-box;
+    width: 90%;
+    padding: 30px;
+    animation: 1s aparecer ease-in-out;
+}
+
+/*estilos a los textos */
+
+/* titulo */
+h1 {
+    color: var(--color-principal);
+    font-size: 40px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    transition: 0.5 ease-in-out;
+    font-weight: bold;
+    text-shadow: 3px 3px 12px #d1d7dd;
+
+}
+
+/* subtitulo */
+
+h2 {
+    color: #0a4c98;
+    border-left: 8px solid var(--color-principal);
+    padding-left: 5px;
+    font-size: 25px;
+
+}
+
+h3{
+   font-family:  "Inter", sans-serif; 
+   color: var(--color-parrafo);
+}
+
+/* párrafos y contenido */
+
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    color: var(--color-parrafo);
+    font-family: "Inter", sans-serif;
+}
+
+li{
+    font-family: "Geist Pixel", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--color-gris);
+}
+
+/* imágenes */
+
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    object-fit: contain;
+    transition: 0.5 ease-in-out;
+    animation: 1s img ease-in-out;
+}
+
+
+/* frames */
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 600px;
+
+}
+
+/*link*/
+a {
+    color: var(--color-principal);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+/* pie de página*/
+footer {
+    background-color: var(--color-footer);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+footer p,
+footer a {
+    font-weight: bold;
+    margin: 0;
+}
+
+/*---animaciones---*/
+img:hover {
+    transform: scale(1.09) rotate(2deg);
+    transition: 0.4s ease;
+}
+
+h1:hover {
+    transform: scale(1);
+    letter-spacing: 1px;
+    color: var(--color-principal);
+}
+
+h2:hover {
+    border-left: 8px solid #ffc400;
+}
+
+
+a:hover {
+    text-shadow: 0 0 5px #00d2d3, 0 0 10px #00d2d3, 0 0 20px #00d2d3;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes img {
+    from {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
